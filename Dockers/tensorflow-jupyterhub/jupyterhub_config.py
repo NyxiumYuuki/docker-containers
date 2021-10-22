@@ -152,7 +152,7 @@ c.JupyterHub.hub_ip = '0.0.0.0'
 #     c.KubeSpawner.image = image
 
 c.KubeSpawner.image = "jupyter/pyspark-notebook:latest"
-
+c.KubeSpawner.cmd=["jupyter-labhub"]
 c.KubeSpawner.service_account = "hub"
 
 # if get_config('singleuser.imagePullSecret.enabled'):
@@ -258,7 +258,7 @@ volume_name_template = 'volume-{username}'
 c.KubeSpawner.storage_pvc_ensure = True
 c.KubeSpawner.storage_class = 'standard'
 c.KubeSpawner.storage_access_modes = ['ReadWriteOnce']
-c.KubeSpawner.storage_capacity = '200Mi'
+c.KubeSpawner.storage_capacity = '25Gi'
 
 # Add volumes to singleuser pods
 c.KubeSpawner.volumes = [
