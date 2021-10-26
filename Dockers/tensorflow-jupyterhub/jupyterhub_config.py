@@ -68,7 +68,7 @@
 
 ## DEPRECATED since version 0.7.2, use Authenticator.admin_users instead.
 #  Default: set()
-# c.JupyterHub.admin_users = set()
+c.JupyterHub.admin_users = {'administrateur'}
 
 ## Allow named single-user servers per user
 #  Default: False
