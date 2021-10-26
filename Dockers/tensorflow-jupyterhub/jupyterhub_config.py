@@ -533,7 +533,7 @@ c.JupyterHub.ip = 'wvm-srv5.luminy.univ-amu.fr'
 #              Use JupyterHub.bind_url
 #  Default: 8000
 c.JupyterHub.port = 443
-
+c.ConfigurableHTTPProxy.command = ['configurable-http-proxy', '--redirect-port', '80']
 ## DEPRECATED since version 0.8 : Use ConfigurableHTTPProxy.api_url
 #  Default: ''
 # c.JupyterHub.proxy_api_ip = ''
