@@ -648,13 +648,13 @@ c.JupyterHub.port = 443
 #
 #          When setting this, you should also set ssl_key
 #  Default: ''
-c.JupyterHub.ssl_cert = 'my_ssl.cert'
+c.JupyterHub.ssl_cert = '/etc/jupyterhub/my_ssl.cert'
 
 ## Path to SSL key file for the public facing interface of the proxy
 #
 #          When setting this, you should also set ssl_cert
 #  Default: ''
-c.JupyterHub.ssl_key = 'my_ssl.key'
+c.JupyterHub.ssl_key = '/etc/jupyterhub/my_ssl.key'
 
 ## Host to send statsd metrics to. An empty string (the default) disables sendin                                                                                                                                                             g
 #  metrics.
